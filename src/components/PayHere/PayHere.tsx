@@ -6,7 +6,7 @@ function PayHere() {
 
   useEffect(() => {
     axios
-      .post("http://localhost:3000/api/payhere")
+      .post("https://testnext-five-sigma.vercel.app/api/payhere")
       .then((res) => {
         console.log(res);
         setHash(res.data);
