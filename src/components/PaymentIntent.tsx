@@ -4,9 +4,9 @@ import {
   useElements,
   useStripe,
 } from "@stripe/react-stripe-js";
-import { loadStripe, type StripeCardElement } from "@stripe/stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
-import React, { useState, type FormEvent, type ReactNode } from "react";
+import { useState, type FormEvent, type ReactNode } from "react";
 
 interface Props {
   children: ReactNode;

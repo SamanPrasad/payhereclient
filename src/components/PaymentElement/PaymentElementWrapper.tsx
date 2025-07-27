@@ -1,7 +1,7 @@
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
-import React, { useEffect, useState, type PropsWithChildren } from "react";
+import { useEffect, useState } from "react";
 import PaymentForm from "./PaymentForm";
 
 const stripe = loadStripe(import.meta.env.VITE_PUBLISHABLE_KEY);

@@ -1,8 +1,6 @@
-import React from "react";
 import "./App.css";
 import PaymentIntent, { StripeProvider } from "./components/PaymentIntent";
 import PaymentElementWrapper from "./components/PaymentElement/PaymentElementWrapper";
-import PaymentForm from "./components/PaymentElement/PaymentForm";
 import PayHere from "./components/PayHere/PayHere";
 
 function App() {

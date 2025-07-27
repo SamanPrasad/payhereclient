@@ -3,7 +3,7 @@ import {
   useElements,
   useStripe,
 } from "@stripe/react-stripe-js";
-import React, { useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 
 function PaymentForm() {
   const stripe = useStripe();
@@ -47,6 +47,7 @@ function PaymentForm() {
 
     setProcessing(false);
   };
+
   return (
     <div>
       <h1>Payment Element</h1>
@@ -56,6 +57,7 @@ function PaymentForm() {
           {processing ? "Processing..." : "Pay"}
         </button>
       </form>
+      <p>{error}</p>
     </div>
   );
 }
