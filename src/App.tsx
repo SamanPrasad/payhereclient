@@ -1,16 +1,14 @@
 import "./App.css";
-import PaymentIntent, { StripeProvider } from "./components/PaymentIntent";
-import PaymentElementWrapper from "./components/PaymentElement/PaymentElementWrapper";
 import PayHere from "./components/PayHere/PayHere";
 
 function App() {
   return (
     <div style={{ backgroundColor: "#9c9c9caa", padding: "20px" }}>
       <h1>Stripe Payment Methods</h1>
-      <StripeProvider>
+      {/* <StripeProvider>
         <PaymentIntent />
       </StripeProvider>
-      <PaymentElementWrapper />
+      <PaymentElementWrapper /> */}
       <PayHere />
     </div>
   );

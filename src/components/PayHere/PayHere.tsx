@@ -5,9 +5,16 @@ function PayHere() {
   const [hash, setHash] = useState<string | undefined>(undefined);
 
   useEffect(() => {
-    axios.post("http://localhost:3000/payhere").then((res) => {
-      setHash(res.data.hash);
-    });
+    axios
+      .post("http://localhost:3000/api/payhere")
+      .then((res) => {
+        console.log(res);
+        setHash(res.data);
+        console.log("hash", res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   if (!hash) return <p>Loading...</p>;

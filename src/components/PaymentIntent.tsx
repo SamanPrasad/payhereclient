@@ -5,8 +5,8 @@ import {
   useStripe,
 } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
-import axios from "axios";
 import { useState, type FormEvent, type ReactNode } from "react";
+import { client } from "../service/axios";
 
 interface Props {
   children: ReactNode;
@@ -39,7 +39,7 @@ function PaymentIntent() {
         return;
       }
 
-      const response = await axios.post("http://localhost:3000/payment-intent");
+      const response = await client.post("/payment-intent");
       const { clientSecret } = response.data;
       const paymentIntentResult = await stripe.confirmCardPayment(
         clientSecret,
