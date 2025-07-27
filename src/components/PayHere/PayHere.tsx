@@ -23,11 +23,7 @@ function PayHere() {
     <div>
       <h1>PayHere</h1>
       <form action="https://sandbox.payhere.lk/pay/checkout" method="post">
-        <input
-          type="hidden"
-          name="merchant_id"
-          value="4OVxzVOsELo4JFnJjKXDTZ3Xe"
-        />
+        <input type="hidden" name="merchant_id" value="1231349" />
         <input
           type="hidden"
           name="return_url"
@@ -47,7 +43,7 @@ function PayHere() {
         <input type="text" name="order_id" defaultValue="ItemNo12345" />
         <input type="text" name="items" defaultValue="Door bell wireless" />
         <input type="text" name="currency" defaultValue="LKR" />
-        <input type="text" name="amount" defaultValue="1000.00" />
+        <input type="text" name="amount" defaultValue="1000" />
         Customer Details
         <input type="text" name="first_name" defaultValue="Saman" />
         <input type="text" name="last_name" defaultValue="Perera" />
