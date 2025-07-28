@@ -27,12 +27,12 @@ function PayHere() {
         <input
           type="hidden"
           name="return_url"
-          value="https://testnext-five-sigma.vercel.app/api/payhere/webhook"
+          value="https://payhereclient.vercel.app/"
         />
         <input
           type="hidden"
           name="cancel_url"
-          value="https://testnext-five-sigma.vercel.app/api/payhere/webhook"
+          value="https://testnext-five-sigma.vercel.app/payhere/calcel"
         />
         <input
           type="hidden"
@@ -40,17 +40,17 @@ function PayHere() {
           value="https://testnext-five-sigma.vercel.app/api/payhere/webhook"
         />
         <h4>Item Details</h4>
-        <input type="text" name="order_id" defaultValue="ItemNo12345" />
-        <input type="text" name="items" defaultValue="Door bell wireless" />
-        <input type="text" name="currency" defaultValue="LKR" />
-        <input type="text" name="amount" defaultValue="1000" />
+        <input type="hidden" name="order_id" defaultValue="12345" />
+        <input type="hidden" name="items" defaultValue="Door bell wireless" />
+        <input type="hidden" name="currency" defaultValue="LKR" />
+        <input type="hidden" name="amount" defaultValue="1000" />
         Customer Details
-        <input type="text" name="first_name" defaultValue="Saman" />
-        <input type="text" name="last_name" defaultValue="Perera" />
-        <input type="text" name="email" defaultValue="samanp@gmail.com" />
-        <input type="text" name="phone" defaultValue="0771234567" />
-        <input type="text" name="address" defaultValue="No.1, Galle Road" />
-        <input type="text" name="city" defaultValue="Colombo" />
+        <input type="hidden" name="first_name" defaultValue="Saman" />
+        <input type="hidden" name="last_name" defaultValue="Perera" />
+        <input type="hidden" name="email" defaultValue="samanp@gmail.com" />
+        <input type="hidden" name="phone" defaultValue="0771234567" />
+        <input type="hidden" name="address" defaultValue="No.1, Galle Road" />
+        <input type="hidden" name="city" defaultValue="Colombo" />
         <input type="hidden" name="country" value="Sri Lanka" />
         <input type="hidden" name="hash" value={hash} />
         <button>Buy Now</button>
