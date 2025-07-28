@@ -55,7 +55,11 @@ function PayHere() {
         <input type="hidden" name="hash" value={hash} />
         <button>Buy Now</button>
       </form>
-      <a href="https://www.payhere.lk" target="_blank">
+      <a
+        href="https://www.payhere.lk"
+        target="_blank"
+        style={{ margin: "20px" }}
+      >
         <img
           src="https://www.payhere.lk/downloads/images/payhere_long_banner_dark.png"
           alt="PayHere"
