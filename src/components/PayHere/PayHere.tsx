@@ -32,7 +32,7 @@ function PayHere() {
         <input
           type="hidden"
           name="cancel_url"
-          value="https://testnext-five-sigma.vercel.app/payhere/calcel"
+          value="https://payhereclient.vercel.app/"
         />
         <input
           type="hidden"
