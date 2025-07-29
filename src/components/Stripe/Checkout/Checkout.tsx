@@ -9,15 +9,7 @@ function Checkout() {
   };
   const handlePayment = () => {
     client
-      .post(
-        "/stripe",
-        { email: email },
-        {
-          headers: {
-            "content-type": "application/json",
-          },
-        }
-      )
+      .post("/stripe")
       .then((res) => {
         const url = res.data;
         console.log(url);
