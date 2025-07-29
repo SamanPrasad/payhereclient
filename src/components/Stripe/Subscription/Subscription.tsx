@@ -1,8 +1,9 @@
 import axios from "axios";
+import { client } from "../../../service/axios";
 
 function Subscription() {
   const handleSubscription = () => {
-    axios
+    client
       .post("/stripe/subscription/checkout")
       .then((res) => {
         const url = res.data;
