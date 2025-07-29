@@ -9,7 +9,7 @@ function Checkout() {
   };
   const handlePayment = () => {
     client
-      .post("/stripe")
+      .post("/stripe/payment/checkout")
       .then((res) => {
         const url = res.data;
         console.log(url);
