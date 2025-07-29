@@ -1,4 +1,3 @@
-import axios from "axios";
 import { client } from "../../../service/axios";
 
 function Subscription() {
