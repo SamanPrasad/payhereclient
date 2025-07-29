@@ -1,6 +1,7 @@
 import "./App.css";
 import PayHere from "./components/PayHere/PayHere";
 import Checkout from "./components/Stripe/Checkout/Checkout";
+import Subscription from "./components/Stripe/Subscription/SUbscription";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <PaymentElementWrapper /> */}
       <PayHere />
       <Checkout />
+      <Subscription />
     </div>
   );
 }
