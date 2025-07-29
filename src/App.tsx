@@ -1,7 +1,7 @@
 import "./App.css";
 import PayHere from "./components/PayHere/PayHere";
 import Checkout from "./components/Stripe/Checkout/Checkout";
-import Subscription from "./components/Stripe/Subscription/SUbscription";
+import Subscription from "./components/Stripe/Subscription/Subscription";
 
 function App() {
   return (
